@@ -6,7 +6,8 @@ client = discord.Client()
 @client.event
 async def on_ready():
   print("빅스비 활성화")
-  await client.change_presence(game=discord.Game(name='', type=1))
+  game = discord.Game("빅스비 개발 중..")
+  await client.change_presence(status=discord.Status.online, activity=game)
 
 @client.event
 async def on_message(message):
