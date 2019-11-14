@@ -13,6 +13,8 @@ async def on_ready():
 async def on_message(message):
   if message.content.startswith("하이 빅스비"):
     await message.channel.send("안녕하세요!")
+  elif message.content.startswith("안녕 빅스비"):
+    await message.channel.send("안녕하세요"):
     
   if message.content.startswith("빅스비"):
     await message.channel.send("네, 플레이어님")
